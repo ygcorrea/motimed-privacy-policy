@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Suporte — Moti</title>
+<meta name="description" content="Central de suporte do aplicativo Moti — área do profissional. Fale com a gente por WhatsApp ou e-mail e veja as dúvidas mais comuns.">
+<style>
+  :root {
+    --accent: #09B2C5;
+    --bg: #ffffff;
+    --surface: #f6f8f9;
+    --text: #16212b;
+    --muted: #5c6b78;
+    --border: #e2e8ec;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #10171d;
+      --surface: #182129;
+      --text: #e8eef2;
+      --muted: #9aabb7;
+      --border: #2a3641;
+    }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    padding: 0 20px 80px;
+    background: var(--bg);
+    color: var(--text);
+    font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  main { max-width: 680px; margin: 0 auto; }
+  header {
+    padding: 40px 0 28px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 32px;
+  }
+  .eyebrow {
+    display: inline-block;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 12px;
+  }
+  h1 { font-size: 28px; line-height: 1.2; margin: 0 0 10px; letter-spacing: -.01em; }
+  .lede { color: var(--muted); margin: 0; }
+  h2 { font-size: 18px; margin: 40px 0 16px; letter-spacing: -.005em; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  strong { font-weight: 600; }
+
+  .channels { display: grid; gap: 12px; }
+  @media (min-width: 560px) { .channels { grid-template-columns: 1fr 1fr; } }
+  .channel {
+    display: block;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 18px 20px;
+    text-decoration: none;
+  }
+  .channel:hover { border-color: var(--accent); text-decoration: none; }
+  .channel .label {
+    display: block;
+    font-size: 12px;
+    letter-spacing: .07em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+  }
+  .channel .value { display: block; font-weight: 600; color: var(--accent); word-break: break-word; }
+  .channel .hint { display: block; font-size: 13px; color: var(--muted); margin-top: 6px; }
+  .note { margin-top: 20px; color: var(--muted); font-size: 14px; }
+
+  .faq { margin-top: 16px; border-top: 1px solid var(--border); }
+  details { border-bottom: 1px solid var(--border); padding: 15px 0; }
+  summary {
+    cursor: pointer;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    color: var(--accent);
+    font-weight: 700;
+    font-size: 19px;
+    line-height: 1;
+    flex: none;
+  }
+  details[open] summary::after { content: "\2212"; }
+  details > p { margin: 11px 0 0; color: var(--muted); }
+
+  footer {
+    margin-top: 48px;
+    padding-top: 24px;
+    border-top: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 14px;
+  }
+</style>
+</head>
+<body>
+<main>
+  <header>
+    <span class="eyebrow">Moti</span>
+    <h1>Suporte</h1>
+    <p class="lede">Área do profissional. Se algo não funcionou como esperado, fale com a gente — respondemos em horário comercial, de segunda a sexta.</p>
+  </header>
+
+  <h2>Falar com a gente</h2>
+  <div class="channels">
+    <a class="channel" href="https://wa.me/5585999024254">
+      <span class="label">WhatsApp</span>
+      <span class="value">+55 85 99902-4254</span>
+      <span class="hint">Caminho mais rápido</span>
+    </a>
+    <a class="channel" href="mailto:notificacoes@motimed.com.br">
+      <span class="label">E-mail</span>
+      <span class="value">notificacoes@motimed.com.br</span>
+      <span class="hint">Também para assuntos de dados pessoais</span>
+    </a>
+  </div>
+  <p class="note">Para agilizar, informe seu <strong>CPF</strong>, o nome da <strong>empresa contratante</strong> e, se for erro no app, o modelo do aparelho.</p>
+
+  <h2>Dúvidas frequentes</h2>
+  <div class="faq">
+    <details>
+      <summary>Não consigo entrar. O que fazer?</summary>
+      <p>O acesso ao Moti é liberado pela empresa em que você trabalha, usando o CPF que ela cadastrou. Não existe cadastro público pelo app.</p>
+      <p>Se o login não passa, confirme com o setor responsável pela escala se o seu CPF já foi cadastrado e se o seu acesso está ativo. Se estiver e ainda assim não entrar, fale com a gente.</p>
+    </details>
+    <details>
+      <summary>Esqueci minha senha.</summary>
+      <p>A redefinição de senha é feita pela empresa contratante, no sistema de gestão de escalas. Peça ao setor responsável pela sua escala para gerar uma nova senha.</p>
+    </details>
+    <details>
+      <summary>Por que o app pede minha localização para bater o ponto?</summary>
+      <p>A coordenada é registrada apenas no momento em que você marca entrada, intervalo ou saída, e é enviada junto com a batida para que a empresa confirme que o registro foi feito no local do plantão.</p>
+      <p>O app não acompanha sua localização em segundo plano nem em nenhum outro momento, e sua localização nunca é compartilhada com outros profissionais.</p>
+    </details>
+    <details>
+      <summary>O ponto não registra e aparece erro de localização.</summary>
+      <p>Verifique se a permissão de localização está concedida para o Moti nos ajustes do aparelho e se o GPS está ligado. Em locais fechados o sinal pode demorar — aguarde alguns segundos perto de uma janela e tente de novo.</p>
+      <p>Se persistir, registre o horário e fale com a gente ou com o responsável pela sua escala para o ajuste manual.</p>
+    </details>
+    <details>
+      <summary>A biometria não funciona.</summary>
+      <p>O Moti usa a biometria já cadastrada no seu aparelho (digital ou reconhecimento facial). Se ela não aparece, confirme que existe biometria configurada nos ajustes do sistema e que o Moti tem permissão para usá-la.</p>
+      <p>A verificação acontece inteiramente no aparelho: o app não tem acesso aos seus dados biométricos, apenas recebe a confirmação de que deu certo.</p>
+    </details>
+    <details>
+      <summary>Não estou recebendo notificações.</summary>
+      <p>Confirme que as notificações do Moti estão permitidas nos ajustes do aparelho e que o modo de economia de bateria não está suspendendo o app em segundo plano.</p>
+    </details>
+    <details>
+      <summary>Meus plantões ou valores estão errados.</summary>
+      <p>Escalas, valores e vagas vêm do sistema da empresa contratante — o app apenas exibe o que está cadastrado lá. Divergência de plantão, valor ou hora deve ser tratada com o setor responsável pela sua escala.</p>
+    </details>
+    <details>
+      <summary>Como excluir minha conta e meus dados?</summary>
+      <p>Como o acesso é corporativo e a conta é criada pela empresa contratante, a exclusão pode ser solicitada diretamente a ela ou por e-mail para <a href="mailto:notificacoes@motimed.com.br">notificacoes@motimed.com.br</a>, informando seu CPF e a empresa contratante.</p>
+      <p>Os detalhes estão no <a href="./#exclusao">item 10 da política de privacidade</a>.</p>
+    </details>
+  </div>
+
+  <footer>
+    <p>Moti — área do profissional &middot; <a href="./">Política de privacidade</a></p>
+  </footer>
+</main>
+</body>
+</html>
